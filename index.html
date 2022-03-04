@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <main hidden>
         <section class="weather-information">
             <img src="https://cdn-icons-png.flaticon.com/512/164/164806.png" alt="weather-icon" class="weather-icon">
             <div class="weather-spans">
@@ -29,8 +29,14 @@
             </div>
         </section>
     </main>
-    <aside class="hidden">
-        <input type="text" placeholder="Qual é o nome da sua cidade?">
+    <aside class="">
+        <div class="user-information">
+            <span>
+                Qual é o nome da sua cidade?
+            </span>
+            <input type="text" placeholder="Nome da sua cidade?">
+            <button>Confirmar</button>
+        </div>
     </aside>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

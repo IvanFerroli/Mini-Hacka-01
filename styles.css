@@ -81,9 +81,56 @@ main{
     font-weight: 400;
 }
 aside{
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
 }
+.user-information{
+    width: 50%;
+}
+aside span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: roboto;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  input::placeholder {
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;    
+    color: #818181;
+  }
+  button {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-justify: center;
+    background: #c4c4c4;
+    border-radius: 10px;
+  }
 .hidden{
     display: none;
 }
