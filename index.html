@@ -14,28 +14,28 @@
     <title>Document</title>
 </head>
 <body>
-    <main hidden>
+    <main>
         <section class="weather-information">
-            <img src="https://cdn-icons-png.flaticon.com/512/164/164806.png" alt="weather-icon" class="weather-icon">
+            <img src="" alt="weather-icon" class="weather-icon">
             <div class="weather-spans">
                 <div class="group-1">
-                    <span class="city-name">Rio de Janeiro</span>
-                    <span class="city-temperature">55°</span>
+                    <span class="city-name"></span>
+                    <span class="city-temperature"></span>
                 </div>
                 <div class="group-2">
-                    <span class="city-sky">Nublado</span>
-                    <span class="city-wind">Vento: 7km/h</span>
+                    <span class="city-sky"></span>
+                    <span class="city-wind"></span>
                 </div>
             </div>
         </section>
     </main>
-    <aside class="">
+    <aside class="hidden">
         <div class="user-information">
             <span>
                 Qual é o nome da sua cidade?
             </span>
             <input type="text" placeholder="Nome da sua cidade?">
-            <button>Confirmar</button>
+            <button onclick="toggleHidden()">Confirmar</button>
         </div>
     </aside>
 </body>

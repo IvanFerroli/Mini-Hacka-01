@@ -1,30 +1,41 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
 }
-main{
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #4e35df, #32047c);
+    animation: gradient 15s ease infinite;
+}
+main {
     width: 100%;
     height: 100%;
-    background-color: #e5e5e5;
 }
-.weather-information{
-    position: absolute;
+
+.weather-information {
+    position: flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 85px;
-    left: 15%;
+    margin-top: 85px;
+    margin-left: 15%;
     width: 70%;
     height: 200px;
-    background-color: #fafafa;
 }
-.weather-information img{
-    margin-left: 20px;;
+
+.weather-information img {
+    margin-left: 20px;
     max-width: 180px;
     max-height: 180px;
     width: auto;
     height: auto;
 }
-.weather-spans{
+
+.weather-spans {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,15 +47,18 @@ main{
     height: 100%;
     max-height: 180px;
 }
-.group-1{
-    width:49%;
-    height: 100%;
-}
-.group-2{
+
+.group-1 {
     width: 49%;
     height: 100%;
 }
-.city-name{
+
+.group-2 {
+    width: 49%;
+    height: 100%;
+}
+
+.city-name {
     display: block;
     margin-top: 20px;
     width: 90%;
@@ -53,7 +67,8 @@ main{
     font-size: 35px;
     font-weight: bold;
 }
-.city-temperature{
+
+.city-temperature {
     display: block;
     margin-bottom: 20px;
     width: 90%;
@@ -62,7 +77,8 @@ main{
     font-size: 65px;
     font-weight: bold;
 }
-.city-sky{
+
+.city-sky {
     display: block;
     margin-top: 20px;
     width: 90%;
@@ -71,7 +87,8 @@ main{
     font-size: 25px;
     font-weight: 400;
 }
-.city-wind{
+
+.city-wind {
     display: block;
     margin-bottom: 20px;
     width: 90%;
@@ -80,8 +97,9 @@ main{
     font-size: 25px;
     font-weight: 400;
 }
-aside{
-    position: absolute;
+
+aside {
+    position: flex;
     left: 0;
     top: 0;
     bottom: 0;
@@ -93,10 +111,12 @@ aside{
     height: 100%;
     background-color: #e5e5e5;
 }
-.user-information{
+
+.user-information {
     width: 50%;
 }
-aside span{
+
+aside span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +126,7 @@ aside span{
     font-weight: 400;
     margin-bottom: 20px;
 }
+
 input {
     display: block;
     width: 100%;
@@ -113,24 +134,27 @@ input {
     background: #f2f2f2;
     border-radius: 10px;
     margin-bottom: 20px;
-  }
-  input::placeholder {
+}
+
+input::placeholder {
     position: absolute;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 16px;    
+    line-height: 16px;
     color: #818181;
-  }
-  button {
+}
+
+button {
     width: 100%;
     height: 40px;
     text-align: center;
     text-justify: center;
     background: #c4c4c4;
     border-radius: 10px;
-  }
-.hidden{
+}
+
+.hidden {
     display: none;
 }
